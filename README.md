@@ -3,11 +3,9 @@
 ## Operating System
 **Stimulation Based Assignment**
 
-Assignment based on stimulation of scheduling 
+Assignment based on stimulation of scheduling algorithms used in 
 
-algorithms used in Operating Sytem to 
-
-schedule the process for resourse alocation 
+Operating Sytem to schedule the process for resourse alocation 
 
 and execution.
 
