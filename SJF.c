@@ -47,10 +47,10 @@ int main()
 	burst=matrix[f][2];
 	matrix[f][6]=0;
 	matrix[f][3]=matrix[f][1]+matrix[f][2];
-	
+	printf("%d",matrix[f][3]);
 	total_burst = total_burst + min -2;
 	totalt = burst;
-	while (totalt < total_burst)
+	while (totalt < total_burst && n > 1)
 	{	min=999999;
 		for(i=0;i<n;i++){
 		if(min>matrix[i][1] && matrix[i][6]==-1) {min=matrix[i][1];f=i;}
@@ -75,7 +75,7 @@ int main()
 		printf("|\t %d", matrix[j][4]);
 		matrix[j][5] = matrix[j][4] - matrix[j][2];
 		printf("|\t %d |", matrix[j][5]);
-		avg_wait_time =  + matrix[j][5];
+		avg_wait_time =  avg_wait_time+ matrix[j][5];
 		avg_turn_ar_time = avg_turn_ar_time + matrix[j][4];
 		printf("\n----------------------------------------------------");
 	}
