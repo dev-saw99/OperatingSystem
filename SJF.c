@@ -30,7 +30,7 @@ int main()
 			printf("\nTwo processes can't have arrival time -> 0 \n");
 			exit(0);
 		}
-		total_burst += matrix[i][2];
+		total_burst += matrix[i][2]+2;
 		matrix[i][6] = -1;
 	}
 
@@ -40,22 +40,24 @@ int main()
 	for(i=0;i<n;i++){
 		
 		if(min>matrix[i][1]){
-			printf("%d",matrix[i][1]);
+			
 			min=matrix[i][1];f=i;
 			}
 	}
-	burst=matrix[f][2];matrix[f][6]=0;matrix[f][3]=matrix[f][1]+matrix[f][2];
+	burst=matrix[f][2];
+	matrix[f][6]=0;
+	matrix[f][3]=matrix[f][1]+matrix[f][2];
 	
-	total_burst = total_burst + min;
+	total_burst = total_burst + min -2;
 	totalt = burst;
 	while (totalt < total_burst)
 	{	min=999999;
 		for(i=0;i<n;i++){
 		if(min>matrix[i][1] && matrix[i][6]==-1) {min=matrix[i][1];f=i;}
 		}
-		burst=matrix[f][2];
+		burst=matrix[f][2]+2;
 		matrix[f][6]=0;
-		matrix[f][3]=totalt+burst+2;
+		matrix[f][3]=totalt+burst;
 		totalt += burst;
 									   
 	}
