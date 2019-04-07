@@ -13,4 +13,4 @@ and execution.
     
 > Shortest Job First  
 
->
+> Priority Scheduling ( Preemtive )
