@@ -60,7 +60,7 @@ int main()
 			matrix[f][4]=time;
 			matrix[f][7]--;
 			while(i!=n-1){
-				if(prio>matrix[i][3]){
+				if(prio>matrix[i][3]) {
 					prio=matrix[i][3];
 					f=i;
 				}
