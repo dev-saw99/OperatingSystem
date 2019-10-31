@@ -1,11 +1,11 @@
 # Lovely Professional University
 
-## Operating System
+## Operating System Assignment
 **Stimulation Based Assignment**
 
 Assignment based on stimulation of scheduling algorithms used in 
 
-Operating Sytem to schedule the process for resourse alocation 
+Operating Sytems to schedule the process for resource allocation 
 
 and execution.
 
@@ -13,4 +13,4 @@ and execution.
     
 > Shortest Job First  
 
-> Priority Scheduling ( Preemtive )
+> Priority Scheduling ( Preemtive approach)
